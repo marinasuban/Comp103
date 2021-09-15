@@ -1,4 +1,5 @@
 # Comp103
+Overall Grade: A+
 
 Prescription:
 This course focuses on the techniques for designing, building and analysing computer programs that deal with large collections of data. The course addresses techniques for programming with collections of data, and the data structures and algorithms needed to implement these collections. The course expands programming skills and provides an understanding of the principles of data abstraction, algorithm design, and the analysis of algorithms fundamental to computer science.
