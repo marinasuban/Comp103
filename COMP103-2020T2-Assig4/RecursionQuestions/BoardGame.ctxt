@@ -1,0 +1,33 @@
+#BlueJ class context
+comment0.target=BoardGame
+comment0.text=\n\ The\ board\ game\ involves\ moving\ a\ piece\ on\ a\ row\ of\ squares.\n\ Each\ square\ on\ the\ board\ has\ a\ positive\ integer\ on\ it.\n\ The\ piece\ can\ move\ to\ the\ left\ or\ right.\n\ When\ moving\ to\ the\ left,\ the\ piece\ must\ move\ the\ number\ of\n\ \ steps\ specified\ in\ the\ cell\ immediately\ to\ its\ left.\n\ When\ moving\ to\ the\ right,\ the\ piece\ must\ move\ the\ number\ of\n\ \ steps\ specified\ in\ the\ cell\ immediately\ to\ its\ right.\n\ For\ example\:\n\ \ If\ the\ piece\ is\ currently\ at\ the\ cell\ marked\ P\ on\ the\ following\ board\:\n\ \ \ \ \ \ \ +---+---+---+---+---+---+---+\n\ \ \ \ \ \ \ |\ 3\ |\ 4\ |\ 2\ |\ P\ |\ 3\ |\ 1\ |\ 5\ |\n\ \ \ \ \ \ \ +---+---+---+---+---+---+---+\n\ \ then\ the\ piece\ could\ move\ 2\ steps\ to\ the\ left,\ or\ 3\ steps\ to\ the\ right.\n\ \ If\ the\ piece\ is\ placed\ in\ the\ cell\ marked\ P\ on\ the\ following\ board\:\n\ \ \ \ \ \ \ +---+---+---+---+---+---+---+\n\ \ \ \ \ \ \ |\ 3\ |\ 4\ |\ 2\ |\ 4\ |\ 3\ |\ P\ |\ 5\ |\n\ \ \ \ \ \ \ +---+---+---+---+---+---+---+\n\ \ then\ the\ piece\ can't\ move\ to\ the\ right\ (because\ 5\ steps\ to\ the\ right\ would\n\ \ take\ it\ off\ the\ board)\ but\ it\ can\ move\ 3\ steps\ to\ the\ left.\n\n\ Depending\ on\ the\ numbers\ on\ the\ board,\ the\ piece\ may\ be\ able\ to\ get\ to\ lots\n\ of\ different\ square,\ or\ to\ very\ few\ squares.\n\ For\ example\ (if\ the\ squares\ are\ counted\ from\ 0)\n\ \ In\ the\ board\ above,\ starting\ at\ square\ number\ 4,\ the\ piece\ could\ get\ to\n\ \ squares\ 3,\ 1,\ 6,\ 5,\ 2,\ but\ couldn't\ get\ to\ squares\ 0\ or\ 4.\n\n\ \ In\ this\ board,\ starting\ at\ square\ number\ 3\ (underlined)\n\ \ \ \ \ \ \ +---+---+---+---+---+---+---+---+---+\n\ \ \ \ \ \ \ |\ 3\ |\ 2\ |\ 1\ |\ 5\ |\ 3\ |\ 3\ |\ 1\ |\ 4\ |\ 1\ |\n\ \ \ \ \ \ \ +---+---+---+\=\=\=+---+---+---+---+---+\n\ \ the\ piece\ could\ get\ to\ squares\ 3,\ 2,\ 0,\ 7,\ 8,\ and\ 6,\ but\ not\ 1,\ 4,\ or\ 5.\n\n\ You\ have\ to\ complete\ the\ findPlaces\ method\ to\ find\ all\ the\ squares\ that\ the\ piece\n\ could\ get\ to\ from\ a\ given\ starting\ position.\n\ The\ findPlaces\ method\ must\ construct\ and\ return\ a\ Set\ of\ all\ the\ indexes\ of\ the\n\ squares\ the\ piece\ can\ get\ to\ (including\ the\ starting\ point).\n\ It\ should\ not\ re-visit\ any\ square\ that\ it\ has\n\ already\ been\ to\ because\ that\ would\ lead\ to\ an\ infinite\ loop\!\n
+comment1.params=board\ pos\ places
+comment1.target=void\ findPlaces(java.util.List,\ int,\ java.util.Set)
+comment1.text=\n\ Recursive\ method\ to\ find\ all\ the\ places\ on\ the\ board\ that\n\ \ \ the\ piece\ could\ get\ to\ from\ pos\n\ places\ is\ the\ Set\ of\ places\ that\ it\ has\ been\ to.\n\ The\ method\ should\ add\ new\ positions\ it\ finds\ to\ places.\n
+comment10.params=
+comment10.target=void\ checkCompile()
+comment10.text=\n\ Does\ nothing,\ but\ compiling\ with\ this\ method\ ensures\ that\ the\ method\n\ \ headers\ have\ not\ been\ changed.\n
+comment2.params=board\ startPos
+comment2.target=java.util.Set\ findPlaces(java.util.List,\ int)
+comment2.text=\n\ Top\ level\ method\ to\ find\ all\ the\ places\ on\ the\ board\ that\ the\n\ piece\ could\ get\ to\ if\ from\ the\ given\ starting\ position.\n
+comment3.params=
+comment3.target=void\ setupGUI()
+comment3.text=\n\ Setup\ the\ GUI\n
+comment4.params=
+comment4.target=void\ testFindPlaces()
+comment4.text=\n\ Calls\ the\ findPlaces\ method\ and\ draws\ all\ the\ places\n\ it\ finds\ on\ the\ current\ board\n
+comment5.params=arguments
+comment5.target=void\ main(java.lang.String[])
+comment6.params=size
+comment6.target=void\ makeBoard(int)
+comment6.text=Make\ a\ board\ of\ the\ given\ size\ with\ random\ numbers
+comment7.params=nums
+comment7.target=void\ makeBoard(java.lang.String)
+comment7.text=Make\ a\ board\ with\ the\ numbers\ in\ the\ string
+comment8.params=board
+comment8.target=void\ drawBoard(java.util.List)
+comment8.text=Draw\ the\ board
+comment9.params=board\ start\ places
+comment9.target=void\ drawBoard(java.util.List,\ int,\ java.util.Set)
+comment9.text=Draw\ the\ board\ with\ the\ starting\ position\ and\ the\ places\ it\ can\ get\ to
+numComments=11

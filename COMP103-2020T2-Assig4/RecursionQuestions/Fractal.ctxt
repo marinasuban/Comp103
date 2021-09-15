@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Fractal
+comment0.text=Fractal
+comment1.params=x\ y\ size
+comment1.target=void\ makeFractal(double,\ double,\ double)
+comment1.text=\n\ Construct\ a\ Fractal\ Diagram\ made\ up\ of\ a\ triangular\ pattern\ of\n\ "elements".\ Each\ element\ is\ a\ circle\ with\ three\ "spikes".\n\ See\ the\ assignment\ description\ for\ the\ pattern\ of\ how\ the\n\ \ elements\ are\ put\ together.\n\ x\ and\ y\ are\ the\ center\ of\ the\ central\ element\ of\ the\ pattern,\ and\n\ size\ is\ the\ length\ of\ the\ three\ spikes\ from\ that\ element.\n\ Each\ element\ will\ have\ three\ smaller\ elements\ placed\ at\ the\ ends\ of\ its\ spikes\n\ You\ should\ stop\ if\ the\ size\ of\ the\ element\ is\ 3\ or\ less.\n\n\ The\ diagram\ is\ a\ List\ of\ all\ the\ elements.\n\ \ Your\ method\ MUST\ use\ addElement(....)\ to\ add\ an\ element\ to\ the\ diagram.\n\ \ Do\ NOT\ try\ to\ draw\ the\ element\ directly\ on\ the\ graphics\ pane.\n
+comment2.params=x\ y\ size
+comment2.target=void\ addElement(double,\ double,\ double)
+comment2.text=\n\ Adds\ one\ fractal\ element\ to\ the\ diagram.\n\ The\ element\ is\ a\ circle\ and\ three\ spikes.\n\ The\ method\ prints\ out\ the\ element\ in\ the\ text\ pane\ to\n\ help\ your\ debugging.\n
+comment3.params=
+comment3.target=void\ setupGUI()
+comment3.text=\n\ Initialise\ the\ interface\n
+comment4.params=action\ x\ y
+comment4.target=void\ doMouse(java.lang.String,\ double,\ double)
+comment5.params=centerX\ centerY\ size
+comment5.target=java.util.List\ testFractal(double,\ double,\ double)
+comment5.text=\n\ Used\ for\ marking.\ DO\ NOT\ MODIFY\!\n\ Resets\ the\ diagram\ list,\ and\ then\ calls\ the\ makeFractal\ method\n\ Returns\ the\ diagram.\n
+comment6.params=arguments
+comment6.target=void\ main(java.lang.String[])
+comment7.params=
+comment7.target=void\ checkCompile()
+comment7.text=\n\ Does\ nothing,\ but\ compiling\ with\ this\ method\ ensures\ that\ the\ method\n\ \ headers\ have\ not\ been\ changed.\n
+numComments=8

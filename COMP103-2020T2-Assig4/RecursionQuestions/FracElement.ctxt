@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=FracElement
+comment0.text=\n\ DO\ NOT\ MODIFY\!\!\n\ Used\ for\ marking.\n\ Describes\ an\ individual\ element\ in\ the\ diagram\n\ Has\ a\ draw\ method\ for\ drawing\ the\ element\ on\ the\ UI\n
+comment1.params=u\ v\ sz
+comment1.target=FracElement(double,\ double,\ double)
+comment2.params=
+comment2.target=void\ draw()
+numComments=3

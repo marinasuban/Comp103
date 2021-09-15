@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=TarmacShuttle
+comment0.text=\n\ Simple\ simulation\ of\ unloading\ passengers\ from\ a\ plane\ on\ the\ airport\ \n\ tarmac\ (not\ at\ a\ gate),\ and\ taking\ the\ passengers\ to\ the\ terminal\ by\n\ a\ series\ of\ shuttles.\n\n\ There\ are\ four\ shuttles\ (numbered\ 0\ to\ 3)\ going\ back\ and\ forward\ to\ the\ terminal.\ \n\ Each\ shuttle\ has\ a\ maximum\ capacity\ (ranging\ from\ 3\ to\ 8).\n\ \n\ For\ each\ shuttle,\ there\ is\ a\ small\ area\ on\ the\ tarmac\ \n\ where\ up\ to\ 6\ passengers\ can\ line\ up\ between\ the\ barriers.\n\ Shuttles\ will\ take\ their\ passengers\ off\ to\ the\ terminal\ whenever\n\ they\ are\ full,\ or\ when\ there\ are\ no\ passengers\ left\ in\ their\ queue.\n\ \n\ Passengers\ on\ the\ plane\ are\ let\ off\ in\ priority\ order,\ with\n\ \ the\ first-class\ passengers\ first,\n\ \ the\ business-class\ passengers\ next,\ and\ then\n\ \ the\ economy-class\ passengers.\ \n\ Within\ each\ class,\ the\ priority\ is\ governed\ by\ their\ seat\ number.\n\ \n\ For\ safety\ reasons,\ passengers\ can\ only\ be\ let\ off\ the\ plane\ when\n\ there\ is\ space\ for\ them\ in\ a\ shuttle\ waiting\ area.\n\ Until\ there\ is\ space,\ they\ have\ to\ wait\ on\ the\ plane.\n\ Passengers\ always\ go\ to\ the\ lowest\ number\ queue\ that\ has\ space.\n\n\ The\ simulation\ should\ start\ by\ initialising\ all\ the\ queues,\ and\n\ \ putting\ all\ the\ passengers\ onto\ the\ plane.\n\ Then,\ each\ time\ tick\ the\ simulation\ will\:\n\ \ \ -\ Check\ each\ shuttle\n\ \ \ \ \ \ \ if\ it\ is\ waiting\ and\ full\:\ then\ start\ the\ trip\n\ \ \ \ \ \ \ if\ it\ is\ waiting\ and\ not\ empty,\ but\ its\ queue\ is\ empty\:\ then\ start\ the\ trip\n\ \ \ \ \ \ \ if\ it\ is\ waiting\ and\ not\ full\ and\ there\ is\ a\ passenger\ in\ its\ queue\:\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ put\ the\ passenger\ on\ the\ shuttle\n\ \ \ \ \ \ \ if\ it\ is\ not\ waiting\ (ie\ going\ to\ the\ terminal)\:\ advance\ the\ trip\ by\ one\ tick.\n\ \ \ -\ Let\ one\ passenger\ off\ the\ plane\ (in\ priority\ order),\ into\ the\n\ \ \ \ \ first\ shuttle\ queue\ that\ has\ space\ (if\ any\ of\ them\ have\ space)\n\ The\ process\ repeats\ until\ all\ the\ passengers\ have\ gone\ to\ the\ terminal.\n\ \n\ The\ simulation\ must\ create\ and\ return\ a\ list\ of\ every\ event\ in\ the\ simulation\n\ There\ are\ three\ kinds\ of\ events\ to\ record\:\n\ \ \ \ new\ Event("deplane",\ p,\ n)\ \ \ \ \ \ \ [passenger\ p\ got\ off\ the\ plane\ to\ the\ n'th\ shuttle\ queue]\n\ \ \ \ new\ Event("onShuttle",\ p,\ n)\ \ \ \ \ [passenger\ p\ got\ on\ shuttle\ n]\n\ \ \ \ new\ Event("toTerminal",\ n)\ \ \ \ \ \ \ [shuttle\ n\ left\ for\ the\ terminal]\n\ Your\ code\ should\ add\ all\ the\ Events\ to\ the\ record\ list.\n
+comment1.params=passengers
+comment1.target=java.util.List\ run(java.util.Set)
+comment1.text=\n\ Run\ the\ simulation.\n\ The\ first\ argument\ is\ a\ set\ of\ passengers\ that\ start\ off\ on\ the\ plane.\n
+comment2.params=arguments
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\n\ Construct\ a\ new\ object,\ setting\ up\ the\ GUI,\ and\ resetting\n
+comment3.params=
+comment3.target=void\ setupGUI()
+comment3.text=\n\ Set\ up\ the\ GUI\:\ buttons\ to\ control\ simulation\ and\ sliders\ for\ setting\ parameters\n
+comment4.params=
+comment4.target=void\ testRun()
+comment5.params=plane\ shuttleQueues\ shuttles
+comment5.target=void\ redraw(java.util.Queue,\ java.util.List,\ java.util.Set)
+comment5.text=redraw\ the\ state\ of\ the\ simulation
+comment6.params=
+comment6.target=void\ checkCompile()
+comment6.text=\n\ Does\ nothing,\ but\ compiling\ with\ this\ method\ ensures\ that\ the\ method\n\ \ headers\ have\ not\ been\ changed.\n
+numComments=7
