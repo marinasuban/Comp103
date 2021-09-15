@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=HTMLChecker
+comment1.params=tags
+comment1.target=boolean\ checkTags(java.util.List)
+comment1.text=\n\ Check\ that\ a\ list\ of\ opening\ and\ closing\ tags\ match\ and\ nest\ properly\n\ tags\ is\ a\ List\ of\ Strings\ which\ are\ the\ names\ of\ the\ tags,\ possibly\ starting\ with\ "/".\n\ For\ example\ \ ["html","header",\ "/header",\ "body",\ "div",\ "/div",\ "/body",\ "/html"]\n\ Opening\ tags\ do\ not\ start\ with\ "/";\ closing\ tags\ start\ with\ "/".\n\ Should\ use\ a\ Stack\ in\ the\ checking\ process\n
+comment2.params=
+comment2.target=void\ setupGUI()
+comment3.params=
+comment3.target=void\ testCheckTags()
+comment3.text=\n\ Reads\ a\ list\ of\ tags\ from\ an\ html\ file\ and\ calls\ checkTags\ on\ the\ list\ of\ tags.\n\ There\ are\ several\ html\ files\ provided\ for\ checking;\ you\ may\ test\ it\ on\n\ any\ html\ file.\n
+comment4.params=filename
+comment4.target=java.util.List\ readTags(java.lang.String)
+comment4.text=\n\ Return\ a\ list\ of\ all\ the\ opening\ and\ closing\ html\ tags\ in\ a\ file.\n\ It\ removes\ the\ <,\ the\ attributes,\ and\ the\ closing\ >\ from\ the\ tag\n\ Closing\ tags\ start\ with\ "/"\n\ Opening\ tags\ do\ not\n\ Uses\ a\ Scanner\ with\ a\ "magic"\ delimiter\ pattern\ to\ pull\ out\ the\ tags.\n\ Ignores\ any\ text\ between\ tags,\ and\ any\ self-closing\ tags\ (like\ <br/>)\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment6.params=
+comment6.target=void\ checkCompile()
+comment6.text=\n\ Does\ nothing,\ but\ compiling\ with\ this\ method\ ensures\ that\ the\ method\n\ \ headers\ have\ not\ been\ changed.\n
+numComments=7
