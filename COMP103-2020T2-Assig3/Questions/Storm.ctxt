@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Storm
+comment0.text=\n\ The\ Storm\ class\ specifies\ objects\ that\ record\ information\ about\n\ major\ hurricanes\ in\ the\ US.\ A\ Storm\ object\ has\ fields\ for\n\ \ \ -\ the\ name\n\ \ \ -\ the\ year\n\ \ \ -\ the\ category\ (1-5)\n\ \ \ -\ the\ date\ (month\ and\ day)\n\ \ \ -\ the\ US\ State\ \n\ It\ also\ contains\ a\ constructor\ and\ a\ toString\ method.\n\ Two\ Storm\ objects\ that\ have\ the\ same\ name\ and\ year\n\ \ are\ the\ same\ storm,\ even\ if\ they\ have\ different\n\ \ States\ and\ dates.\n\ \ The\ name\ is\ not\ enough\ to\ identify\ the\ Storm\ because\ names\ are\ reused.\n\ \n\ (a)\ Modify\ the\ Storm\ class\ so\ that\ a\ List\ of\ Storm\ objects\ could\ be\ sorted\n\ \ \ \ \ alphabetically\ by\ name\ and\ year\ (ignoring\ the\ other\ fields)\ using\ the\ statement\n\ \ \ \ \ \ \ Collections.sort(myStormList);\n\n\ (b)\ Modify\ the\ Storm\ class\ so\ that\ you\ could\ use\ Storms\ properly\ in\ a\ HashSet\ or\ HashMap.\n\ \ If\ this\ is\ done\ correctly,\ then\ the\ following\ code\ would\ print\n\ \ \ \ "Found\ storm1"\ and\ "Found\ storm2"\ but\ not\ "Found\ storm3"\n\n\ \ \ Storm\ storm\ \=\ new\ Storm("Charley",\ 2004,\ 1,\ "August/14",\ "North-Carolina");\n\ \ \ Set<Storm>\ mySet\ \=\ new\ HashSet<Storm>();\n\ \ \ mySet.add(storm);\n\n\ \ \ Storm\ storm1\ \=\ new\ Storm("Charley",\ 2004,\ 1,\ "August/14",\ "North-Carolina");\n\ \ \ if\ (mySet.contains(storm1)){\ UI.println("Found\ storm1");\ }\n\n\ \ \ Storm\ storm2\ \=\ new\ Storm("Charley",\ 2004,\ 4,\ "August/13",\ "Florida");\n\ \ \ if\ (mySet.contains(storm2)){\ UI.println("Found\ storm2");\ }\n\ \n\ \ \ Storm\ storm3\ \=\ new\ Storm("Charley",\ 1986,\ 1,\ "August/17",\ "North-Carolina");\n\ \ \ if\ (mySet.contains(storm3)){\ UI.println("Found\ storm3");\ }\n\ \n\ Note\:\ this\ means\ that\ although\ storm,\ storm1,\ and\ storm2\ are\ different\ Storm\ objects,\n\ \ and\ the\ category,\ date,\ and\ state\ of\ storm2\ are\ different,\n\ \ they\ are\ describing\ the\ same\ storm\ because\ the\ name\ and\ year\ are\ the\ same\ ,\ but\n\ \ storm3\ is\ a\ different\ storm\ because\ it\ was\ a\ different\ year.\ \n
+comment1.params=n\ y\ c\ d\ s
+comment1.target=Storm(java.lang.String,\ int,\ int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=Return\ a\ string\ description\ of\ the\ storm\ suitable\ for\ printing\ out
+comment3.params=s
+comment3.target=int\ compareTo(Storm)
+comment4.params=o
+comment4.target=boolean\ equals(java.lang.Object)
+comment5.params=
+comment5.target=int\ hashCode()
+numComments=6

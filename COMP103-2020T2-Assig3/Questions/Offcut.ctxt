@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Offcut
+comment0.text=\n\ The\ Offcut\ class\ describes\ individual\ offcuts\ from\ a\ factory\ that\n\ processes\ sheets\ expensive\ metals\ and\ plastics.\n\ For\ simplicity,\ we\ assume\ that\ all\ the\ offcuts\ are\ roughly\ rectangular.\n\ Each\ Offcut\ has\ fields\ to\ specify\n\ \ -\ the\ ID\ number\ of\ the\ offcut\n\ \ -\ the\ material\n\ \ -\ the\ length\ of\ the\ offcut\n\ \ -\ the\ width\ of\ the\ offcut.\n\ There\ are\ methods\ to\ return\ the\ values\ of\ the\ different\ fields.\n\ \n\ YOU\ MUST\ NOT\ MODIFY\ THIS\ CLASS\!\n
+comment1.params=id\ m\ l\ w
+comment1.target=Offcut(long,\ java.lang.String,\ double,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getMaterial()
+comment2.text=Return\ the\ material
+comment3.params=
+comment3.target=double\ getLength()
+comment3.text=Return\ the\ length
+comment4.params=
+comment4.target=double\ getWidth()
+comment4.text=Return\ the\ width
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=Return\ a\ string\ description\ suitable\ for\ printing\ out
+comment6.params=other
+comment6.target=boolean\ equals(java.lang.Object)
+comment6.text=\n\ Since\ the\ id\ field\ specifies\ the\ offcut\ uniquely,\n\ equality\ is\ based\ solely\ on\ the\ id\ field\n
+comment7.params=
+comment7.target=int\ hashCode()
+comment7.text=\n\ Since\ the\ id\ field\ specifies\ the\ offcut\ uniquely,\n\ the\ hashCode\ is\ based\ solely\ on\ the\ id\ field\n
+numComments=8

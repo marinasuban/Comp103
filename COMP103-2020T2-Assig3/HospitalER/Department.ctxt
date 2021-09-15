@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Department
+comment0.text=\n\ A\ treatment\ Department\ (Surgery,\ X-ray\ room,\ \ ER,\ Ultrasound,\ etc)\n\ Each\ department\ will\ need\n\ -\ A\ name,\n\ -\ A\ maximum\ number\ of\ patients\ that\ can\ be\ treated\ at\ the\ same\ time\n\ -\ A\ Set\ of\ Patients\ that\ are\ currently\ being\ treated\n\ -\ A\ Queue\ of\ Patients\ waiting\ to\ be\ treated.\n\ \ \ \ (ordinary\ queue,\ or\ priority\ queue,\ depending\ on\ argument\ to\ constructor)\n
+comment1.params=name\ capacity\ isUsingPriorityQueue
+comment1.target=Department(java.lang.String,\ int,\ boolean)
+comment10.params=p1Value\ p2Value\ p3Value
+comment10.target=void\ reportGraphsChallenge(double,\ double,\ double)
+comment11.params=
+comment11.target=void\ reportStatsChallenge()
+comment2.params=p
+comment2.target=void\ addNewPatient(Patient)
+comment3.params=
+comment3.target=java.util.Set\ getTreatmentRoom()
+comment4.params=
+comment4.target=java.util.Queue\ getWaitingRoom()
+comment5.params=
+comment5.target=void\ movePatientsFromWaitingToTreatment()
+comment6.params=
+comment6.target=java.util.ArrayList\ removeDischargedPatients()
+comment7.params=patientsList\ isFullDischarge
+comment7.target=void\ removeFromTreatmentRoom(java.util.List,\ boolean)
+comment8.params=y
+comment8.target=void\ redraw(double)
+comment8.text=\n\ Draw\ the\ department\:\ the\ patients\ being\ treated\ and\ the\ patients\ waiting\n\ You\ may\ need\ to\ change\ the\ names\ if\ your\ fields\ had\ different\ names\n
+comment9.params=
+comment9.target=void\ reportStatistics()
+numComments=12
